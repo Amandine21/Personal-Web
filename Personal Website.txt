@@ -1,0 +1,15 @@
+1) Homepage
+	- Needs Moon Over Clouds Video
+2) Contact
+	- Needs an Image next to Contact Information
+	- Fix Spacing Between Conact Methods and Paragraph
+3) About Section
+	- This will be a Split Page with Manefesto to the Left and Picture to the Right
+	- There will be a Background Image surrounding it (Go with an Canvas City Painting, With Yellow)
+	- Area of Interest table Will be in the Bottom (Links)
+4) Porftolio
+	- Local Face
+	- Cloud Computing Technology
+	- Power with Paella
+	- Computer Case Mod Design
+	-

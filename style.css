@@ -34,7 +34,7 @@ body {
 .navbar-home {
   position: absolute;
   left: 5%;
-  font-family: "Arial", sans-serif;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .navbar-nav {
@@ -61,6 +61,13 @@ body {
   position: absolute;
   right: 10%;
   font-family: "Arial", sans-serif;
+}
+
+.contact-button {
+  background-color: rgba(1,139,167,255);
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: 180%;
 }
 
 /* CSS for contact.html */
@@ -93,3 +100,20 @@ body {
 #contact .col-lg-6.contact-info {
   padding-left: 50px; /* Add padding to the left of contact info */
 }
+
+  /* CSS for contact section */
+  #contact .container {
+    max-width: 800px;
+  }
+
+  #contact .row {
+    flex-direction: row-reverse; /* Display contact info on the left */
+  }
+
+  #contact .col-lg-6 {
+    order: 2; /* Reverse the order of columns */
+  }
+
+  #contact .col-lg-6.contact-info {
+    padding-left: 40px;
+  }
