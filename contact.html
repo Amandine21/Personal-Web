@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <style>
+    /* CSS for .header */
+    .header {
+      position: relative;
+      height: 80vh; /* Adjusted height to crop the bottom 20% */
+      background-image: url('Mountain.jpg');
+      background-color: rgba(0, 0, 0, 0.3);
+      background-repeat: no-repeat;
+      background-position: center top 15%;
+      background-size: 100% 100%;
+    }
+
+    /* CSS for contact section */
+    #contact .container {
+      max-width: 800px;
+    }
+
+    #contact .row {
+      flex-direction: row-reverse; /* Display contact info on the left */
+    }
+
+    #contact .col-lg-6 {
+      order: 2; /* Reverse the order of columns */
+    }
+
+    #contact .col-lg-6.contact-info {
+      padding-left: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1></h1>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand navbar-home" href="index.html">ALEXANDER HANKS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item contact"> <!-- Add the "contact" class to this list item -->
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 contact-info">
+          <h2>Contact Information</h2>
+          <p>
+            I can be reached through multiple ways for your convenience. If you need to contact me, feel free to choose from the following options:<br>
+            Email: azail@tamu.edu<br>
+            Linkedin: 123-456-7890<br>
+            Instagram: 1234 Main Street, City, Country
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include Bootstrap JS (Place it before </body> tag) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
