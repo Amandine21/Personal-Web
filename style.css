@@ -72,48 +72,52 @@ body {
 
 /* CSS for contact.html */
 #contact {
-  padding: 80px 0;
+  padding: 85px 0;
+  position: relative;
 }
 
 #contact .container {
-  max-width: 800px;
+  max-width: 80vw; /* Adjust the max-width as desired */
 }
 
 #contact h2 {
   font-size: 57px;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
+  margin-top: -10vh; /* Adjust the margin-top as desired */
 }
 
 #contact p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 33vh; /* Adjust the margin-bottom as desired */
 }
 
-/* Additional CSS for contact section */
+#contact ul {
+  margin-bottom: 5vh;
+  margin-top: -30vh; /* Adjust the margin-top as desired */
+}
+
+#contact ul li {
+  margin-bottom: 2vh; /* Adjust the margin-bottom as desired */
+}
+
 #contact .row {
-  position: absolute;
-  left: -40%; /* Adjust the left value as needed */
-  width: 90%; /* Adjust the width as needed */
-  bottom: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #contact .col-lg-6.contact-info {
-  padding-left: 50px; /* Add padding to the left of contact info */
+  text-align: left; /* Align the text to the left */
 }
 
-  /* CSS for contact section */
-  #contact .container {
-    max-width: 800px;
-  }
+#contact .col-lg-6.contact-image {
+  margin-left: auto; /* Adjust the margin-left to move the image closer to the right screen border */
+  margin-top: -7vh;
+  margin-right:-5vw;
+}
 
-  #contact .row {
-    flex-direction: row-reverse; /* Display contact info on the left */
-  }
+#contact .col-lg-6.contact-image img {
+  max-width: 90%;
+  height: auto;
+}
 
-  #contact .col-lg-6 {
-    order: 2; /* Reverse the order of columns */
-  }
-
-  #contact .col-lg-6.contact-info {
-    padding-left: 40px;
-  }
