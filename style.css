@@ -4,7 +4,6 @@ body {
   position: relative;
 }
 
-
 .vertical-column {
   position: absolute;
   top: 11%;
@@ -78,12 +77,13 @@ body {
 
 #contact .container {
   max-width: 80vw; /* Adjust the max-width as desired */
+  flex-wrap: wrap;
 }
 
 #contact h2 {
   font-size: 57px;
   margin-bottom: 5vh;
-  margin-top: -10vh; /* Adjust the margin-top as desired */
+  margin-top: -7.5vh; /* Adjust the margin-top as desired */
 }
 
 #contact p {
@@ -110,31 +110,63 @@ body {
   text-align: left; /* Align the text to the left */
 }
 
+.col-lg-6.contact-info {
+  background-color: rgba(234, 227, 214, 1); /* Set the desired background color */
+
+}
+
+.col-lg-6.contact-info h2 {
+  background-color: rgba(234, 227, 214, 1);  /* Set the font color for the h2 tag */
+}
+
 #contact .col-lg-6.contact-image {
   margin-left: auto; /* Adjust the margin-left to move the image closer to the right screen border */
-  margin-top: -7vh;
+  margin-top: -7.5vh;
   margin-right:-5vw;
 }
 
 #contact .col-lg-6.contact-image img {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
 }
 
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: left; /* Align the text to the left */
+}
+
+footer p {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
 
 /* CSS for about.html */
-
 .about-body {
   background-image: url("about.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  height: auto; /* Set the height of the container to 100 viewport height */
 }
 
 .about-container {
-  background-color: rgba(12, 30, 35, 0.9);
-  padding: 80px;
-  margin-top: 7vh;
+  background-color: rgba(234, 227, 214, 1);
+  padding: 5px;
+  margin-top: 7vh; /* Adjust the margin-top as desired */
+  margin-bottom: 20vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -144,11 +176,103 @@ body {
   color: white; /* Set the font color to white */
 }
 
+.about-container-one {
+  background-color: rgba(12, 30, 35, 0.9);
+  padding: 70px;
+  margin-top: -20vh; /* Adjust the margin-top as desired */
+  margin-bottom: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150vh; /* Set a maximum width for the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+  color: white; /* Set the font color to white */
+}
+
+.about-container-two {
+  background-color: rgba(234, 227, 214, 1);
+  padding: 15px;
+  margin-top: -20vh; /* Adjust the margin-top as desired */
+  margin-bottom: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150vh; /* Set a maximum width for the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+  color: white; /* Set the font color to white */
+}
+
+.about-container-three {
+  background-color: rgba(12, 30, 35, 0.9);
+  padding: 40px;
+  margin-top: -10vh; /* Adjust the margin-top as desired */
+  margin-bottom: 8.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150vh; /* Set a maximum width for the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+  color: white; /* Set the font color to white */
+  z-index: 1; /* Set a higher z-index value to ensure it's in front */
+}
+
+.about-container-four {
+  background-color: rgba(12, 30, 35, 0.9);
+  padding: 50px;
+  margin-top: -8.5vh; /* Adjust the margin-top as desired */
+  margin-bottom: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150vh; /* Set a maximum width for the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+  color: white; /* Set the font color to white */
+  z-index: 2; /* Set a higher z-index value to ensure it's in front */
+}
+
+.about-container-five {
+  background-color: rgba(12, 30, 35, 0.9);
+  padding: 50px;
+  margin-top: -10vh; /* Adjust the margin-top as desired */
+  margin-bottom: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150vh; /* Set a maximum width for the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+  color: white; /* Set the font color to white */
+  z-index: 2; /* Set a higher z-index value to ensure it's in front */
+}
+
+
+.work h1 {
+  color: black;
+  font-size: 48px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-top: 15px; 
+  margin-bottom: -5px;
+}
+
+.work h2 {
+  color: black;
+  font-size: 48px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-top: 15px; 
+  margin-bottom: -5px;
+}
+
 .about-heading {
   width: 100%;
   text-align: center;
   font-size: 48px; /* Adjust the font size as desired */
   color: white; /* Set the font color to white */
+  margin-top: -10vh;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .about-text-col {
@@ -156,14 +280,121 @@ body {
   width: 40%; /* Adjust the width as desired */
   padding-right: 80px; /* Add some spacing between the columns */
   color: white; /* Set the font color to white */
+  margin-top: -3vh;
 }
 
 .about-img-col {
   flex: 1;
   width: 60%; /* Adjust the width as desired */
+  margin-top: -3vh;
 }
 
 .about-text-col h2 {
   margin-top: 0;
   text-align: center; /* Center the heading */
+}
+
+.container2 {
+  /* Add your styles here */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  flex-shrink: 0;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.text {
+  flex-grow: 1;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.image {
+  flex-shrink: 0;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.telescope-operator {
+  flex: 1;
+  width: 40%; /* Adjust the width as desired */
+  padding-right: 80px; /* Add some spacing between the columns */
+  color: white; /* Set the font color to white */
+  margin-top: -3vh;
+}
+
+.telescope-operator h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.telescope-operator ul {
+  font-size: 16px;
+  color: white;
+  margin-right: -20w;
+  padding-left: 15px;
+}
+
+.telescope-operator li {
+  margin-bottom: 10px; /* Adjust the margin-bottom as desired */
+}
+
+.telescope-image {
+  flex-shrink: 0;
+  max-width: 275px;
+  max-height: 275px;
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+
+.peer-teacher {
+  flex: 1;
+  width: 40%; /* Adjust the width as desired */
+  padding-right: 80px; /* Add some spacing between the columns */
+  color: white; /* Set the font color to white */
+  margin-top: -3vh;
+}
+
+.peer-teacher h4 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.peer-teacher ul {
+  font-size: 16px;
+  color: white;
+  margin-right: -20w;
+  padding-left: 15px;
+}
+
+.peer-teacher li {
+  margin-bottom: 10px; /* Adjust the margin-bottom as desired */
+}
+
+.teaching-image {
+  flex-shrink: 0;
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  left: 5px;
+  top: -10px;
+}
+
+
+.bachelor-image {
+  flex-shrink: 0;
+  max-width: 250px;
+  max-height: 250px;
+  position: relative;
+  left: 5px;
+  top: -10px;
 }
